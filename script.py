@@ -7,3 +7,6 @@ def devide(a, b):
     if isinstance(a, str) or isinstance(b, str):
 	raise ValueError("Could not devide strings")
     return a / b
+
+def hello_world():
+    return "hello world"
