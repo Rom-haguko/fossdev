@@ -18,6 +18,9 @@ def test_devide_prohibited():
     except:
         print("Test string-devision fails")
 
+def test_dision_prohibited():
+    return
+
 def test_devide_zero():
     a = 2
     b = 0
