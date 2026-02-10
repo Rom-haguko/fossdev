@@ -1,27 +1,32 @@
-from script import sum, devide
-
+from script import sum ,devide
 def test_sum():
     a = 1
     b = 2
     result = 3
-    assert sun(a, b) == result
-
+    assert sum(a,b) == result
 
 def test_devide():
     a = 2
     b = 4
     result = 0.5
-    assert devide(a, b) == result
+    assert devide(a,b) == result
+
+def test_devide_prohibited():
+    try:
+        devide("A","B")
+    except:
+        print("Test string-devision fails")
 
 def test_devide_zero():
     a = 2
     b = 0
     try:
-	sum(a, b)
-	assert False
-    except: ValueError as e:
-	print("Test (zero-devision) passed")
+        devide(a,b)
+        assert False
+    except ValueError as e:
+        print("Good")
 
-if __name__ == "__main__":
-    test_devide()
+if name == "main":
     test_sum()
+    test_devide()
+    test_devide_zero()
