@@ -19,6 +19,7 @@ def test_devide_prohibited():
         print("Test string-devision fails")
 
 def test_dision_prohibited():
+    
     return
 
 def test_devide_zero():
