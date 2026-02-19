@@ -1,4 +1,4 @@
-from script import sum, devide
+from script import sum, devide, substruct
 
 
 def test_sum():
@@ -33,10 +33,17 @@ def test_devide_zero():
     except ValueError:
         pass
 
+def test_substruct():
+    a = 5
+    b = 3
+    result = 2
+    assert substruct(a, b) == result
+    print("Test substruct passed")
 
 if __name__ == "__main__":
     test_sum()
     test_devide()
     test_devide_prohibited()
     test_devide_zero()
+    test_substruct()
 
