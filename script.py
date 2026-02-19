@@ -11,4 +11,5 @@ def devide(a,b):
     else:
         raise ValueError("Divisor can not be zero!")
     
-#something was changed
+def substruct(a, b):
+    return a - b
